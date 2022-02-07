@@ -1,0 +1,16 @@
+$component-name: 'c-button';
+
+.#{$component-name} {
+  display: inline-block;
+  padding: 0.7rem 3rem;
+  margin-top: 1rem;
+  border-radius: $border-radius;
+  background: $gradient;
+  color: $white;
+  cursor: pointer;
+  font-size: 1.7rem;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}

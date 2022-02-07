@@ -1,0 +1,85 @@
+$component-name: 'l-header';
+
+.#{$component-name} {
+  padding: 2rem 9%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: $black;
+  border-bottom: $border-white;
+  position: relative;
+
+  &.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+  }
+
+  &__logo {
+    font-weight: bolder;
+    color: $white;
+    font-size: 2.5rem;
+  }
+
+  &__menu-button {
+    display: none;
+    font-size: 3rem;
+    color: $white;
+    cursor: pointer;
+  }
+
+  &__link {
+    font-size: 2rem;
+    margin-left: 2.5rem;
+    color: $white;
+
+    &:hover {
+      color: $red;
+    }
+  }
+
+  @media (max-width: 991px) {
+    padding: 2rem 4%;
+  }
+
+  @media (max-width: 768px) {
+    &__menu-button {
+      display: block;
+
+      &.fa-times {
+        transform: rotate(180deg);
+      }
+    }
+
+    &__navbar {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: $black;
+      border-top: $border-white;
+      padding: 1rem 2rem;
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+
+      &.nav-active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      }
+    }
+
+    &__link {
+      display: block;
+      margin: 1.5rem 0;
+      padding: 1rem;
+      background: $gradient;
+      text-align: center;
+      border-radius: $border-radius;
+
+      &:hover {
+        color: $black;
+        padding-left: 2rem;
+      }
+    }
+  }
+}

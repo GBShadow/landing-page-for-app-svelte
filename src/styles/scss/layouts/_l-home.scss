@@ -1,0 +1,43 @@
+$component-name: 'l-home';
+
+.#{$component-name} {
+  background: url(../images/home-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  text-align: center;
+
+  &__content {
+    padding-top: 5rem;
+    max-width: 70rem;
+    margin: 0 auto;
+  }
+
+  &__title {
+    font-size: 6.5rem;
+    color: $white;
+  }
+
+  &__description {
+    font-size: 1.7rem;
+    color: $gray-light;
+    padding: 1rem 0;
+  }
+
+  .swiper-container {
+    width: 100%;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .swiper-slide {
+    width: 30rem;
+    height: 50rem;
+  }
+
+  .swiper-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+}

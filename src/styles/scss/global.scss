@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+$black: #272d3b;
+$white: #fff;
+$red: #ed176f;
+$red-with-opacity: #ed176f0d;
+$coral: #f7817f;
+$gray: #666;
+$gray-light: #eee;
+$gradient: linear-gradient(90deg, $red, $coral);
+$box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+$border: 0.1rem solid rgba(0, 0, 0, 0.3);
+$border-white: 0.1rem solid rgba(255, 255, 255, 0.1);
+$border-radius: 5rem;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+}
+
+*::selection {
+  background: $red;
+  color: $white;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 4rem;
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: $black;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $red;
+  border-radius: 5rem;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+}
+
+section {
+  padding: 3rem 9%;
+}
+
+button {
+  cursor: pointer;
+}
+
+@import './layouts/l-header';
+@import './layouts/l-home';
+@import './layouts/l-features';
+@import './layouts/l-about';
+
+@import './components/c-button';
+@import './components/c-heading';

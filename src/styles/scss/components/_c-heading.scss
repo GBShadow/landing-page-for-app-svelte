@@ -1,0 +1,12 @@
+$component-name: 'c-heading';
+
+.#{$component-name} {
+  text-align: center;
+  color: transparent;
+  background: $gradient;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 5rem;
+  text-transform: uppercase;
+  padding: 1rem;
+}
