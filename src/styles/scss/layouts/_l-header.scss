@@ -8,13 +8,13 @@ $component-name: 'l-header';
   background: $black;
   border-bottom: $border-white;
   position: relative;
+  z-index: 10;
 
   &.active {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    z-index: 10;
   }
 
   &__logo {
@@ -70,7 +70,7 @@ $component-name: 'l-header';
 
     &__link {
       display: block;
-      margin: 1.5rem 0;
+      margin: 1.5rem 1.2rem;
       padding: 1rem;
       background: $gradient;
       text-align: center;
