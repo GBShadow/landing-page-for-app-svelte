@@ -1,0 +1,11 @@
+$component-name: 'l-contact';
+
+.#{$component-name} {
+  background: linear-gradient($white 50%, $black 50.1%);
+
+  &__form {
+    padding: 2rem;
+    background: $white;
+    box-shadow: $box-shadow;
+  }
+}

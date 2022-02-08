@@ -1,0 +1,38 @@
+$component-name: 'c-input';
+
+.#{$component-name} {
+  position: relative;
+
+  input,
+  textarea {
+    width: 100%;
+    margin: 1.5rem 0;
+    padding: 1rem 0;
+    border-bottom: $border-2;
+    font-size: 1.7rem;
+    text-transform: none;
+
+    &:focus {
+      border-color: $red;
+    }
+
+    &:focus ~ label,
+    &:valid ~ label {
+      top: -0.4rem;
+      font-size: 1.5rem;
+      color: $red;
+    }
+  }
+
+  textarea {
+    resize: none;
+    height: 15rem;
+  }
+
+  label {
+    font-size: 1.7rem;
+    position: absolute;
+    top: 2.3rem;
+    left: 0;
+  }
+}

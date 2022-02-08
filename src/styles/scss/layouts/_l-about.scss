@@ -28,18 +28,33 @@ $component-name: 'l-about';
   &__description {
     color: $gray;
     font-size: 1.7rem;
-    padding: 1rem 0 2rem;
+    padding: 1rem 0;
   }
 
   &__button-container {
     display: flex;
     gap: 2rem;
     flex-wrap: wrap;
+    margin-top: 1rem;
   }
 
   &__button {
     &:hover {
       opacity: 0.7;
+    }
+  }
+
+  @media (max-width: 768px) {
+    &__content {
+      text-align: center;
+    }
+
+    &__button {
+      width: 100%;
+
+      &:last-child {
+        margin: 1rem 0;
+      }
     }
   }
 }

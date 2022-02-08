@@ -1,0 +1,22 @@
+$component-name: 'l-footer';
+
+.#{$component-name} {
+  text-align: center;
+  background: $black;
+
+  &__icon {
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    background: $gray-light;
+    color: $black;
+    border-radius: 50%;
+    font-size: 2rem;
+    margin: 0.3rem;
+
+    &:hover {
+      color: $white;
+      background: $gradient;
+    }
+  }
+}

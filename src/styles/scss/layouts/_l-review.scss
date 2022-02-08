@@ -1,0 +1,45 @@
+$component-name: 'l-review';
+
+.#{$component-name} {
+  &__box-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  &__box {
+    text-align: center;
+    margin: 1rem;
+    padding: 2rem;
+    flex: 1 1 33rem;
+    border: $border;
+    box-shadow: $box-shadow;
+    border-radius: $border;
+  }
+
+  &__image {
+    height: 13rem;
+    width: 13rem;
+    padding: 1rem;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  &__user-name {
+    font-size: 2.5rem;
+    color: $black;
+  }
+
+  &__description {
+    font-size: 1.4rem;
+    color: $gray;
+    padding: 1rem 0;
+  }
+
+  &__star-icon {
+    padding: 1rem 0.1rem;
+    font-size: 2rem;
+    color: $red;
+  }
+}

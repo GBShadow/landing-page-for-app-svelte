@@ -10,6 +10,7 @@ $gray-light: #eee;
 $gradient: linear-gradient(90deg, $red, $coral);
 $box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 $border: 0.1rem solid rgba(0, 0, 0, 0.3);
+$border-2: 0.2rem solid rgba(0, 0, 0, 0.3);
 $border-white: 0.1rem solid rgba(255, 255, 255, 0.1);
 $border-radius: 5rem;
 
@@ -68,6 +69,32 @@ button {
 @import './layouts/l-home';
 @import './layouts/l-features';
 @import './layouts/l-about';
+@import './layouts/l-usage';
+@import './layouts/l-review';
+@import './layouts/l-pricing';
+@import './layouts/l-contact';
+@import './layouts/l-footer';
 
 @import './components/c-button';
 @import './components/c-heading';
+@import './components/c-input';
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+
+  section {
+    padding: 3rem 4%;
+  }
+}
+
+@media (max-width: 400px) {
+  html {
+    font-size: 50%;
+  }
+
+  .heading {
+    font-size: 3.5rem;
+  }
+}

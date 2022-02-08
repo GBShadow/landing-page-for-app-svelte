@@ -40,4 +40,14 @@ $component-name: 'l-home';
     width: 100%;
     height: 100%;
   }
+
+  @media (max-width: 768px) {
+    &__title {
+      font-size: 4rem;
+    }
+
+    &__description {
+      font-size: 1.5rem;
+    }
+  }
 }

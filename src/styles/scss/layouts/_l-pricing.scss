@@ -1,0 +1,54 @@
+$component-name: 'l-pricing';
+
+.#{$component-name} {
+  &__box-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  &__box {
+    flex: 1 1 33rem;
+    text-align: center;
+    margin: 1rem;
+    padding: 2rem 0;
+    box-shadow: $box-shadow;
+    border: $border;
+  }
+
+  &__price {
+    font-size: 5rem;
+    color: $black;
+    font-weight: bolder;
+
+    & span {
+      font-size: 2rem;
+      font-weight: normal;
+    }
+  }
+
+  &__title {
+    color: $white;
+    background: $gradient;
+    font-size: 3rem;
+    padding: 1.5rem 0;
+    margin: 1rem 0;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 2rem 0;
+    border-bottom: 0.1rem solid $red;
+  }
+
+  &__list-item {
+    padding: 0.7rem 0;
+    font-size: 1.7rem;
+    color: $gray;
+  }
+
+  .c-button {
+    margin-top: 2rem;
+  }
+}
